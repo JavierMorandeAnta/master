@@ -1,0 +1,11 @@
+frontend:
+  image: "nginx:dev"
+  replicas: 1
+backend:
+  image: "node:dev"
+  replicas: 2
+database:
+  image: "mysql:dev"
+  replicas: 1
+  storage:
+    size: 5Gi
