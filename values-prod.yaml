@@ -1,0 +1,11 @@
+frontend:
+  image: "nginx:stable"
+  replicas: 3
+backend:
+  image: "node:stable"
+  replicas: 5
+database:
+  image: "mysql:stable"
+  replicas: 2
+  storage:
+    size: 20Gi
